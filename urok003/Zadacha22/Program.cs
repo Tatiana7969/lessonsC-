@@ -21,7 +21,7 @@ void SquareTable(int num)
     for (int i = 1; i <= num; i++)
     {
         int square = i * i;
-        Console.WriteLine($"{i}  {square}");
+        Console.WriteLine($"{i, 3}  {square, 5}");
     }
 }
 
