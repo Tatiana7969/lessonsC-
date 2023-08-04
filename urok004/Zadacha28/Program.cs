@@ -13,7 +13,7 @@ Console.WriteLine($"Произведение чисел от 1 до {number} = {
 int Factorial(int num)
 {
     int fact = 1;
-    for (int i = 1; i < num; i++)
+    for (int i = 1; i <= num; i++)
     {
         checked
         {
