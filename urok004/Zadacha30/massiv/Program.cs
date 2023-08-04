@@ -6,17 +6,18 @@
  int[] array = new int[8];
 
  FillArr(array);
- ConclusionArr(array);
+ PrintArr(array);
 
  void FillArr(int[] arr)
  {
+    Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        array[i] = new Random().Next( 2);
+        arr[i] = rnd.Next(2);
     }
  }
 
- void ConclusionArr(int[] arr)
+ void PrintArr(int[] arr)
  {
     for (int i = 0; i < arr.Length; i++)
     {
