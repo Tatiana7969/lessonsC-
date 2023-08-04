@@ -16,7 +16,7 @@ Console.WriteLine($"Количество цифр в числе {number} = {resu
 int CountNumberDigit(int num)
 {
     int countDigit = 0;
-    while (num > 0 || num < 0)
+    while (num != 0)
     {
         countDigit++;
         num = num / 10;
