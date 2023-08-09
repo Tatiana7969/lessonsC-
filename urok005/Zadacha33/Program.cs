@@ -43,7 +43,11 @@ Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int[] array = CreateArrayRndInt(12, -9, 9);
+
 Console.Write($"{number}; массив" );
 PrintArray(array); 
-Console.WriteLine(SearchNumberArray(array, number)? "-> да": "-> нет");
+
+bool result = SearchNumberArray(array, number);
+Console.WriteLine(result ? "-> да": "-> нет");
+// Console.WriteLine(SearchNumberArray(array, number)? "-> да": "-> нет");
 
